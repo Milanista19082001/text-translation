@@ -1,0 +1,45 @@
+
+
+
+
+
+#banners_container #banners .banner {
+    position: relative;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #666
+}
+
+#banners_container #banners .banner.image_as_banner {
+    background-position: unset
+}
+
+@media (max-width: 991px) {
+    #banners_container #banners .banner {
+        padding: 24px
+    }
+}
+
+@media (max-width: 575px) {
+    .banner, .slick-slide {
+        height: 45vw;
+        min-height: 160px;
+        max-height: initial;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .08)
+    }
+
+    #banners_container #banners .banner {
+        padding: 16px
+    }
+}
+
+.carousel {
+    width:840px;
+    height:560px;
+    margin: auto;
+}
+
